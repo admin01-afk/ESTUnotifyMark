@@ -1,4 +1,6 @@
 from selenium import webdriver
+import selenium
+from selenium.webdriver.common.by import By
 from selenium_stealth import stealth
 from dotenv import load_dotenv
 import os
@@ -37,10 +39,16 @@ def main():
             )
     
     driver.get(URL)
-    # Your code here
+
+
+    title = driver.title
+    print(title)
+    
+    #Login butonunu buldum ve tıkladım. Bundan önce input alanlarının bulunup doldurulması gerekiyor.
+    loginButton = driver.find_element(By.CLASS_NAME,"btn btn-success w-100")
+    loginButton.click()
     
     driver.quit()
-
-
+    
 if __name__ == "__main__":
     main()
