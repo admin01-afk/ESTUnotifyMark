@@ -24,7 +24,7 @@ def main():
     driver = webdriver.Chrome(options=options)
 
     #firefox kullananlar için. Sonradan if kontrolü eklenir.
-    moz = webdriver.Firefox(options=firefoxOptions)
+    #moz = webdriver.Firefox(options=firefoxOptions)
 
     # Apply stealth mode
     stealth(driver,
