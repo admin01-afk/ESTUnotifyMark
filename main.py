@@ -1,4 +1,6 @@
 from selenium import webdriver
+import selenium
+from selenium.webdriver.common.by import By
 from selenium_stealth import stealth
 from dotenv import load_dotenv
 import os
@@ -66,6 +68,6 @@ def main():
     sleep(5) # grade table info ...
 
     driver.quit()
-
+    
 if __name__ == "__main__":
     main()
